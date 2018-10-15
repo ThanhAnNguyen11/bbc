@@ -1,7 +1,6 @@
 <?php
-	define("APP_URL", "http://teddycoder.com/projects/navicontrol/");
-	define("APP_PATH", "/home/teddycoder/public_html/projects/navicontrol/");
-	define("APP_PATH", "/home/teddycoder/public_html/projects/navicontrol/");
+	define("APP_URL", "http://localhost/bbc/");
+	define("APP_PATH", "C:/MAMP/htdocs/bbc/");
 ?>
 
 

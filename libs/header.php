@@ -1,40 +1,36 @@
-<!--Google Tag Manager-->
-	
-<!--End Google Tag Manager-->
+<div id="fixedHeadeGnavi" class="scroll-to-fixed-fixed" style="z-index: 1000; position: fixed; top: 0px; margin-left: 0px; width: 100%; left: 0px;"><header id="header" class="">
+    <div class="pc">
+        <div class="headerInner flexBox flexBox--center flexBox--between">
+            <p id="logo"><a href="http://vnese-freelance.co/projects/perfetto_wp/wp/"><img src="<?php echo APP_URL; ?>common/img/header/logobbc.png" alft=""></a></p>
+            <div class="rightHead flexBox flexBox--center">
+                <ul class="flexBox flexBox--center gNavi">
+                    						
+                    <li><a href="http://vnese-freelance.co/projects/perfetto_wp/wp/">TRANG CHỦ</a></li>
+                    						
+                    <li><a href="http://vnese-freelance.co/projects/perfetto_wp/wp/products/">GIỚI THIỆU</a></li>
+                    						
+                    <li><a href="http://vnese-freelance.co/projects/perfetto_wp/wp/news/">SẢN PHẨM</a></li>
+                    						
+                    <li><a href="http://vnese-freelance.co/projects/perfetto_wp/wp/about-us/">CÔNG TRÌNH ỨNG DỤNG</a></li>
+                    						
+                    <li><a href="http://vnese-freelance.co/projects/perfetto_wp/wp/contact/">TIN TỨC</a></li>
 
-<header id="header" class="pcDisplay">
-    <h1><?php echo $txtH1; ?></h1>
-    <p id="logo"><a href="<?php echo APP_URL; ?>">LOGO</a></p>
-</header>
-
-
-<div id="spHeader" class="spDisplay clearfix">
-    <p id="spLogo"><a href="<?php echo APP_URL; ?>">LOGO</a></p>
-    <div class="spMenu">
-        <p id="btnMenu">
-            <span class="menuImg"><img src="<?php echo APP_URL; ?>common/img/header/icon_menu.png" alt="" width="45"></span>
-            <span class="closeImg"><img src="<?php echo APP_URL; ?>common/img/header/icon_close.png" alt="" width="45"></span>
-        </p>
+                    <li><a href="http://vnese-freelance.co/projects/perfetto_wp/wp/contact/">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+        </div> 
     </div>
-</div>
-
-
-<div id="sideMenu" class="spDisplay">
-    <div id="menuInner">
-        <nav>
-            <ul id="menu">
-            	<li><a href="<?php echo APP_URL; ?>">HOME</a></li>
-                <li><a href="<?php echo APP_URL; ?>troubles/">こんな症状でお悩みですか？</a></li>
-                <li><a href="<?php echo APP_URL; ?>cbt/">認知行動療法とは</a></li>
-                <li><a href="<?php echo APP_URL; ?>medical_care/">診療について</a></li>
-                <li><a href="<?php echo APP_URL; ?>counseling/">カウンセリングについて</a></li>
-                <li><a href="<?php echo APP_URL; ?>about/">当クリニックについて</a></li>
-                <li><a href="<?php echo APP_URL; ?>">スタッフ紹介</a></li>
-                <li><a href="<?php echo APP_URL; ?>">よくある質問</a></li>
-                <li><a href="<?php echo APP_URL; ?>">クリニックブログ</a></li>
-                <li><a href="<?php echo APP_URL; ?>">ニュース</a></li>
-            </ul>
-        </nav>
-        <p class="closeBottom"><span class="btnClose"><img src="<?php echo APP_URL; ?>common/img/header/icon_close_b.png" alt="CLOSE" width="61"></span></p>
+    <div class="sp">
+        <div class="headerSp flexBox flexBox--center flexBox--between">
+            <p class="logo_sp"><a href="http://vnese-freelance.co/projects/perfetto_wp/wp/"><img src="http://vnese-freelance.co/projects/perfetto_wp/wp/common/img/header/logo.svg" alft=""></a></p>
+            <button class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
     </div>
-</div>
+</header></div>
+
+
+
