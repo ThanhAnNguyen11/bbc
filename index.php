@@ -225,6 +225,7 @@ include(APP_PATH."libs/head.php");
 <!--/Main-->
 
 <!--Footer-->
+<?php include(APP_PATH."libs/footer.php"); ?>
 <!--/Footer-->
 <!--===================================================-->
 </div>
