@@ -258,9 +258,6 @@ flexBox
 .gNavi li + li {
   margin-left: 35px; }
 
-.main {
-  padding-top: 85px; }
-
 #slider {
   border-bottom: 4px solid #FFB200; }
   #slider .slick-slide {
@@ -294,7 +291,7 @@ flexBox
           display: inline-block;
           width: 46px;
           height: 46px;
-          background: url(../img/top/arrow-circle.png);
+          background: url(../img//top/arrow-circle.png);
           background-size: 100%; }
         #slider .slick-slide .text .linkText-text {
           margin-left: 15px;
@@ -303,42 +300,82 @@ flexBox
     #slider .slick-slide::after {
       position: absolute;
       content: "";
-      width: 6px;
-      height: 10px;
-      background: url(../img//top/arrow-link.png) no-repeat;
-      background-size: 100%;
-      display: inline-block;
-      margin-left: 10px; }
-    #slider .slick-slide::before {
-      content: "";
       display: block;
-      height: 4px;
-      position: absolute;
-      left: 0;
-      right: 100%;
-      bottom: -10px;
-      background: #FFB200;
-      -webkit-transition: 0.3s all;
-      transition: 0.3s all;
-      -webkit-transition-delay: 0.3s;
-      transition-delay: 0.3s; }
-    #slider .slick-slide::after {
-      content: "";
-      display: block;
-      height: 4px;
-      position: absolute;
+      top: 0;
       left: 0;
       right: 0;
-      bottom: -10px;
-      background: #FFB200;
-      -webkit-transition: 0.3s all;
-      transition: 0.3s all; }
-    #slider .slick-slide:hover {
-      color: #000000; }
-      #slider .slick-slide:hover::before {
-        right: 0; }
-      #slider .slick-slide:hover::after {
-        left: 100%; }
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); }
+  #slider .slick-prev,
+  #slider .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    z-index: 1; }
+  #slider .slick-prev {
+    left: 35px; }
+    #slider .slick-prev::before {
+      content: "";
+      display: block;
+      background-image: url(../img/top/arrow-left.png);
+      width: 18px;
+      height: 34px;
+      background-size: 100%; }
+  #slider .slick-next {
+    right: 35px; }
+    #slider .slick-next::before {
+      content: "";
+      display: block;
+      background-image: url(../img//top/arrow-right.png);
+      width: 18px;
+      height: 34px;
+      background-size: 100%; }
+  #slider .slick-dots {
+    position: absolute;
+    bottom: 25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    z-index: 2; }
+    #slider .slick-dots li {
+      position: relative;
+      display: inline-block;
+      margin: 0 8px;
+      padding: 0;
+      cursor: pointer;
+      vertical-align: middle; }
+      #slider .slick-dots li button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 6px;
+        height: 6px;
+        padding: 0px;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: #ffffff;
+        opacity: .5;
+        border-radius: 50%; }
+      #slider .slick-dots li.slick-active {
+        transform: scale(2); }
+        #slider .slick-dots li.slick-active button {
+          opacity: 1; }
 
 .products {
   height: 886px;
@@ -351,8 +388,6 @@ flexBox
     font-weight: bold; }
     .products-header h2 .text-large {
       font-size: 40px; }
-  .products .gNavi li + li {
-    margin-left: 35px; }
   .products .product-box {
     width: 31.5%;
     background: #ffffff; }
@@ -365,48 +400,24 @@ flexBox
         color: #000000;
         font-weight: bold;
         margin-top: 15px; }
-      .products .product-box a .text {
-        overflow: hidden;
-        position: absolute;
-        top: 40%;
-        transform: translateY(-40%);
-        color: #fff;
-        width: 100%;
-        text-align: center;
-        z-index: 2; }
-        .products .product-box a .text .largeText {
-          font-size: 4.5vw;
-          position: relative;
-          margin-bottom: 20px;
-          line-height: 1.33;
-          font-weight: 600;
-          font-family: 'Bai Jamjuree', sans-serif;
-          text-shadow: 1px 1px 1px rgba(7, 7, 7, 0.3); }
-        .products .product-box a .text .linkText {
-          z-index: 2;
-          color: #ffffff;
-          display: block; }
-          .products .product-box a .text .linkText-arrow {
-            content: "";
-            vertical-align: middle;
-            display: inline-block;
-            width: 46px;
-            height: 46px;
-            background: url(../img//top/arrow-circle.png);
-            background-size: 100%; }
-          .products .product-box a .text .linkText-text {
-            margin-left: 15px;
-            display: inline-block;
-            vertical-align: middle; }
+      .products .product-box a p {
+        margin-top: 10px; }
       .products .product-box a::after {
-        position: absolute;
         content: "";
         display: block;
-        top: 0;
+        height: 4px;
+        width: 0;
+        background: #FFB200;
+        position: absolute;
         left: 0;
-        right: 0;
         bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5); }
+        -webkit-transition: 0.3s all;
+        transition: 0.3s all; }
+      .products .product-box a:hover {
+        color: #000000;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+        .products .product-box a:hover::after {
+          width: 100%; }
 
 .construction-header {
   width: 100%;

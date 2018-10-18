@@ -9,13 +9,13 @@
                     						
                     <li><a href="">GIỚI THIỆU</a></li>
                     						
-                    <li><a href="">SẢN PHẨM</a></li>
+                    <li><a href="/products">SẢN PHẨM</a></li>
                     						
-                    <li><a href="">CÔNG TRÌNH ỨNG DỤNG</a></li>
+                    <li><a href="/projects">CÔNG TRÌNH ỨNG DỤNG</a></li>
                     						
                     <li><a href="">TIN TỨC</a></li>
 
-                    <li><a href="">LIÊN HỆ</a></li>
+                    <li><a href="/contact">LIÊN HỆ</a></li>
                 </ul>
             </div>
         </div> 
