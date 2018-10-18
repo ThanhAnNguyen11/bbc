@@ -255,7 +255,6 @@ include(APP_PATH."libs/head.php");
 <!--/wrapper-->
 <!--===================================================-->
 <script src="<?php echo APP_URL; ?>common/js/slick.min.js"></script>
-
 <script>
     $(function(){
         $('#slider').slick({
@@ -291,28 +290,13 @@ include(APP_PATH."libs/head.php");
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                            arrows: false,
+                    arrows: false,
                     slidesToScroll: 1
                 }
                 }
             ]
         });
-
-        // $(window).resize(function(){
-        //     var h_slide = $('.wrapSlide .inner').height();
-        //     $('.wrapSlide').css('height',h_slide + 30);
-        // });
     });
-
-    // $("#slider").on('beforeChange', function(event, slick, nextSlide){
-    //     TweenMax.to(".largeText", 0, {ease: Back.easeOut.config(1), opacity:0, y:120 });
-    //     TweenMax.to(".linkText", 0, {ease: Back.easeOut.config(1),opacity:0, y:120});
-    // });
-
-    // $("#slider").on('afterChange', function(event, slick, currentSlide){
-    //     TweenMax.to(".largeText", 0.5, {ease: Back.easeOut.config(1),opacity:1, y:0 });
-    //     TweenMax.to(".linkText", 0.5, {ease: Back.easeOut.config(1),opacity:1, y:0,delay:0.1});
-    // });
 </script>
 
 </body>
