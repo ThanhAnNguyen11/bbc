@@ -1,4 +1,4 @@
-<div id="fixedHeadeGnavi" class="scroll-to-fixed-fixed" style="z-index: 1000; position: fixed; top: 0px; margin-left: 0px; width: 100%; left: 0px;"><header id="header" class="">
+<header id="header" class="">
     <div class="pc">
         <div class="headerInner flexBox flexBox--center flexBox--between">
             <p id="logo"><a href="http://vnese-freelance.co/projects/perfetto_wp/wp/"><img src="<?php echo APP_URL; ?>common/img/header/logobbc.png" alft=""></a></p>
@@ -30,7 +30,7 @@
             </button>
         </div>
     </div>
-</header></div>
+</header>
 
 
 

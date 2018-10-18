@@ -1,5 +1,5 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"] . "/bbc/app_config.php");
+include($_SERVER["DOCUMENT_ROOT"] . "/bbc/bbc/app_config.php");
 include(APP_PATH."libs/head.php"); 
 ?>
 </head>
@@ -77,25 +77,31 @@ include(APP_PATH."libs/head.php");
             </div>
             <div class="products-list flexBox flexBox--between">
                 <div class="product-box">
+                    <div class="product-box--wrap">
                     <a href="">
                         <img src="<?php echo APP_URL; ?>common/img/top/product-1.png">
                         <h3>Gạch Ống 4 Lỗ</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi </p>
                     </a>
+                    </div>
                 </div>
                 <div class="product-box">
+                    <div class="product-box--wrap">
                     <a href="">
                         <img src="<?php echo APP_URL; ?>common/img/top/product-2.png">
                         <h3>Gạch Đinh</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi </p>
                     </a>
+                    </div>
                 </div>
                 <div class="product-box">
-                    <a href="">
-                        <img src="<?php echo APP_URL; ?>common/img/top/product-3.png">
-                        <h3>Gạch Ống 8 Lỗ</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi </p>
-                    </a>
+                    <div class="product-box--wrap">
+                        <a href="">
+                            <img src="<?php echo APP_URL; ?>common/img/top/product-3.png">
+                            <h3>Gạch Ống 8 Lỗ</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi </p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
