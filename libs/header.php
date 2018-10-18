@@ -20,7 +20,7 @@
             </div>
         </div> 
     </div>
-    <div class="sp">
+    <!-- <div class="sp">
         <div class="headerSp flexBox flexBox--center flexBox--between">
             <p class="logo_sp"><a href="http://vnese-freelance.co/projects/perfetto_wp/wp/"><img src="http://vnese-freelance.co/projects/perfetto_wp/wp/common/img/header/logo.svg" alft=""></a></p>
             <button class="hamburger hamburger--collapse" type="button">
@@ -29,7 +29,7 @@
                 </span>
             </button>
         </div>
-    </div>
+    </div> -->
 </header></div>
 
 

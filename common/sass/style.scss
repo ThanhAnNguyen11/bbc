@@ -1,3 +1,49 @@
+/*-----------------------------------------------------------
+Container
+------------------------------------------------------------*/
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    @media screen and (max-width: 767px) {
+        max-width: 100%;
+        margin: 0 20px;
+    }
+}
+
+/*-----------------------------------------------------------
+flexBox
+------------------------------------------------------------*/
+
+.flexBox {
+    display: flex;
+    &-notSp{
+        @media screen and (max-width: 767px) {
+            display: block;
+        }
+    }
+}
+
+.flexBox--center {
+    align-items: center;
+}
+
+.flexBox--between {
+    justify-content: space-between;
+}
+
+.flexBox--arround {
+    justify-content: space-around;
+}
+
+.flexBox--wrap {
+    flex-wrap: wrap;
+}
+
+.flexBox--nosp {
+    display: block;
+}
+
+
 .text-yellow{
     color: #FFB200;
 }
@@ -7,7 +53,7 @@
         content: "";
         width: 6px;
         height: 10px;
-        background: url(/bbc/common/img/top/arrow-link.png) no-repeat;
+        background: url(../img/top/arrow-link.png) no-repeat;
         background-size: 100%;
         display: inline-block;
         margin-left: 10px;
@@ -45,6 +91,221 @@
         }
         &::after{
             left: 100%;
+        }
+    }
+}
+.link-thumb{
+    .thumbnail{
+        position: relative;
+        display: block;
+        overflow: hidden;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #FFB200;
+            opacity: 0;
+            z-index: 1;
+            transition: all .2s ease-in-out;
+        }
+        &-img{
+            display: block;
+            transition: all .6s ease-in-out;
+            width: 100%;
+        }
+        .contents{
+            position: absolute;
+            top: 50%;
+            text-align: center;
+            transform: translateY(-50%);
+            width: 100%;
+            opacity: 0;
+            transition: all .4s ease-in;
+            z-index: 2;
+            h2{
+                color: #ffffff;
+                font-weight: 600;
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+            .icon{
+                display: inline-block;
+                margin-top: 20px;
+                width: 28px;
+                margin-top: 10px;
+            }
+            &-2x{
+                h2{
+                    font-size: 32px;
+                }
+                .icon{
+                    width: 55px;
+                    margin-top: 0;
+                }
+            }
+            &-m{
+                h2{
+                    font-size: 28px;
+                }
+                .icon{
+                    width: 40px;
+                }
+            }
+        }
+    }
+    &:hover{
+        img{
+            transform: scale(1.05);
+        }
+        div{
+            &::after{
+                opacity: .75;
+            }
+            .contents{
+                opacity: 1;
+            }
+        }
+    }
+}
+.breadcrumb{
+    margin-top: 20px;
+    li{
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        a{
+            color: #666666;
+            &:hover{
+                color: #666666;
+            }
+        }
+        .home{
+            display: block;
+        }
+    }
+    li + li {
+        margin-left: 10px;
+        padding-left: 15px;
+        &::before{
+            content: "";
+            position: absolute;
+            left: -5px;
+            top: 35%;
+            width: 6px;
+            height: 6px;
+            border-left: 1px solid #666666;
+            border-top: 1px solid #666666;
+            -moztransform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+            -ms-transform: rotate(135deg);
+            transform: rotate(135deg);
+        }
+    }
+}
+.banner{
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    &-proj{
+        background: url(../img/top/banner.jpg)
+    }
+    h1{
+        text-align: center;
+        top: 50%;
+        position: relative;
+        transform: translateY(-50%);
+        color: #ffffff;
+        font-size: 42px;
+        font-weight: bold;
+        z-index: 2;
+        letter-spacing: 2px;
+        @media screen and(max-width: 767px){
+            font-size: 27px;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba($color: #000000, $alpha: .7);
+        z-index: 1;
+    }
+}
+.navigation{
+    text-align: center;
+    margin: 85px 0 135px;
+    li{
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        a{
+            color: #666666;
+            font-weight: bold;
+            padding: 7px 15px;
+            display: block;
+        }
+        &.active{
+            a{
+                color: #ffffff;
+                background: #000000;
+            }
+        }
+    }
+    li + li {
+        margin-left: 20px;
+    }
+    .next, .prev{
+        a{
+            padding: 7px 12px;
+            &::after{
+                content: "";
+                position: relative;
+                display: inline-block;
+                width: 9px;
+                height: 9px;
+                border-left: 1px solid #000000;
+                border-top: 1px solid #000000;
+            }
+            &:hover{
+                background: #999999;
+            }
+        }
+    }
+    .prev{
+        a{
+           
+            &::after{
+                right: -3px;
+                -moz-transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+        }
+    }
+    .next{
+        a{
+            &::after{
+                left: -3px;
+                -moz-transform: rotate(135deg);
+                -webkit-transform: rotate(135deg);
+                -ms-transform: rotate(135deg);
+                transform: rotate(135deg);
+            }
+        }
+    }
+    @media screen and (max-width: 767px){
+        li + li {
+            margin-left: 15px;
         }
     }
 }
@@ -108,7 +369,7 @@
                     display: inline-block;
                     width: 46px;
                     height: 46px;
-                    background: url(/bbc/common/img/top/arrow-circle.png);
+                    background: url(../img/top/arrow-circle.png);
                     background-size: 100%;
                 }
                 &-text{
@@ -152,7 +413,7 @@
         &::before{
             content: "";
             display: block;
-            background-image: url(/bbc/common/img/top/arrow-left.png);
+            background-image: url(../img/top/arrow-left.png);
             width: 18px;
             height: 34px;
             background-size: 100%;
@@ -163,7 +424,7 @@
         &::before{
             content: "";
             display: block;
-            background-image: url(/bbc/common/img/top/arrow-right.png);
+            background-image: url(../img/top/arrow-right.png);
             width: 18px;
             height: 34px;
             background-size: 100%;
@@ -215,7 +476,7 @@
     width: 100%;
     padding-top: 175px;
     display: block;
-    background: #f5f5f5 url(/bbc/common/img/top/products-bg.png) no-repeat;
+    background: #f5f5f5 url(../img/top/products-bg.png) no-repeat;
     background-position: top right;
     &-header{
         h2{
@@ -229,8 +490,7 @@
         margin-top: 45px;
     }
     .product-box{
-        width: 350px;
-        height: 450px;
+        width: 31.5%;
         background: #ffffff;
         a{
             display: block;
@@ -271,7 +531,7 @@
     &-header{
         width: 100%;
         height: 300px;
-        background: url(/bbc/common/img/top/construction-header.jpg) no-repeat;
+        background: url(../img/top/construction-header.jpg) no-repeat;
         background-size: cover;
         background-position: center;
         text-align: center;
@@ -295,73 +555,9 @@
     }
     &-group{
         width: 50%;
-        img{
-            display: block;
-            transition: all .6s ease-in-out;
-            width: 100%;
-        }
         &-child{
             a{
                 width: 50%;
-            }
-        }
-        .contents{
-            position: absolute;
-            top: 50%;
-            text-align: center;
-            transform: translateY(-50%);
-            width: 100%;
-            opacity: 0;
-            transition: all .4s ease-in;
-            z-index: 2;
-            h2{
-                color: #ffffff;
-                font-weight: 600;
-                font-size: 32px;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-            }
-            img{
-                display: inline-block;
-                margin-top: 20px;
-                width: 55px;
-            }
-            &-s{
-                h2{
-                    font-size: 16px;
-                }
-                img{
-                    width: 28px;
-                    margin-top: 10px;
-                }
-            }
-        }
-        a{
-            position: relative;
-            display: block;
-            overflow: hidden;
-            &::after{
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: #FFB200;
-                opacity: 0;
-                z-index: 1;
-                transition: all .2s ease-in-out;
-            }
-            &:hover{
-                img{
-                    transform: scale(1.05);
-                }
-                .contents{
-                   opacity: 1;
-                }
-                &::after{
-                    opacity: .7;
-                }
             }
         }
     }
@@ -369,7 +565,7 @@
 .introduction{
     width: 100%;
     height: 35vw;
-    background: url(/bbc/common/img/top/introduction-bg.jpg);
+    background: url(../img/top/introduction-bg.jpg);
     background-size: cover;
     position: relative;
     &-inner{
@@ -414,67 +610,7 @@
         }
     }
     &-box{
-        width: 350px;
-        a{
-            .thumbnail{
-                position: relative;
-                overflow: hidden;
-                height: 250px;
-                .cover{
-                    transition: all .6s ease-in-out;
-                }
-                .icon{
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate3d(-50%, -50%, 0);
-                    opacity: 0;
-                    transition: all .4s ease-in-out;
-                    z-index: 2;
-                }
-                &::after {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    background: #FFB200;
-                    opacity: 0;
-                    z-index: 1;
-                    transition: all .2s ease-in-out;
-                }
-            }
-            .date{
-                color: #666666;
-                margin-top: 10px;
-            }
-            .title{
-                color: #000000;
-                font-weight: 600;
-                font-size: 16px;
-                margin-top: 5px;
-            }
-            &:hover{
-                .date{
-                    color: #666666;
-                }
-                .title{
-                    color: #000000;
-                }
-                .thumbnail{
-                    .cover{
-                        transform: scale(1.05);
-                    }
-                    .icon{
-                        opacity: 1;
-                    }
-                    &::after {
-                        opacity: .7;
-                    }
-                }
-            }
-        }
+        width: 31.5%;
     }
     &-more{
         margin: 80px 0;
@@ -485,7 +621,7 @@
     &-info{
         width: 100%;
         height: 250px;
-        background: url(/bbc/common/img/top/footer-bg.jpg);
+        background: url(../img/top/footer-bg.jpg);
         background-size: cover;
         .contact{
             width: 375px;
@@ -525,6 +661,27 @@
         }
         p{
             color: #999999;
+        }
+    }
+}
+
+/*-----------------------------------------------------------
+projects
+------------------------------------------------------------*/
+.projects{
+    &-list{
+        margin-top: 90px;
+    }
+    &-group + &-group{
+        margin-top: 30px;
+    }
+    &-box{
+        width: 31.5%;
+        @media screen and(max-width: 767px) {
+            width: 100%;
+            & + & {
+                margin-top: 30px;
+            }
         }
     }
 }

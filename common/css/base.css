@@ -372,21 +372,6 @@ Header
 ------------------------------------------------------------*/
 
 /*-----------------------------------------------------------
-Container
-------------------------------------------------------------*/
-
-#container {
-    clear: both;
-    margin: 0 auto 50px;
-    max-width: 1020px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.container {
-    max-width: 1110px;
-    margin: 0 auto;
-}
-/*-----------------------------------------------------------
 PageTop
 ------------------------------------------------------------*/
 
@@ -410,29 +395,6 @@ Footer
 }
 /*---*/
 
-.flexBox {
-    display: flex;
-}
-
-.flexBox--center {
-    align-items: center;
-}
-
-.flexBox--between {
-    justify-content: space-between;
-}
-
-.flexBox--arround {
-    justify-content: space-around;
-}
-
-.flexBox--wrap {
-    flex-wrap: wrap;
-}
-
-.flexBox--nosp {
-    display: block;
-}
 /* Smartphone */
 
 @media only screen and (max-width: 767px) {

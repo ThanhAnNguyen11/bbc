@@ -110,44 +110,54 @@ include(APP_PATH."libs/head.php");
         <div class="construcsion-list flexBox flexBox--between">
             <div class="construction-group">
                 <div class="construction-group-child flexBox flexBox--between">
-                    <a href="">
-                        <img src="<?php echo APP_URL; ?>common/img/top/construction-1.jpg">
-                        <div class="contents contents-s">
-                            <h2>Novotel Sài gòn</h2>
-                            <img class="icon" src="<?php echo APP_URL; ?>common/img/top/icon-more.png">
+                    <a href="" class="link-thumb">
+                        <div class="thumbnail">
+                            <img class="thumbnail-img" src="<?php echo APP_URL; ?>common/img/top/construction-1.jpg">
+                            <div class="contents">
+                                <h2>Novotel Sài gòn</h2>
+                                <img class="icon" src="<?php echo APP_URL; ?>common/img/top/icon-more.png">
+                            </div>
                         </div>
                     </a>
-                    <a href="">
-                        <img src="<?php echo APP_URL; ?>common/img/top/construction-2.jpg">
-                        <div class="contents contents-s">
-                            <h2>Novotel Sài gòn</h2>
-                            <img class="icon" src="<?php echo APP_URL; ?>common/img/top/icon-more.png">
+                    <a href="" class="link-thumb">
+                        <div class="thumbnail">
+                            <img class="thumbnail-img" src="<?php echo APP_URL; ?>common/img/top/construction-2.jpg">
+                            <div class="contents">
+                                <h2>Novotel Sài gòn</h2>
+                                <img class="icon" src="<?php echo APP_URL; ?>common/img/top/icon-more.png">
+                            </div>
                         </div>
                     </a>
                 </div>
                 <div class="construction-group-child flexBox flexBox--between">
-                    <a href="">
-                        <img src="<?php echo APP_URL; ?>common/img/top/construction-3.jpg">
-                        <div class="contents contents-s">
-                            <h2>Novotel Sài gòn</h2>
-                            <img class="icon" src="<?php echo APP_URL; ?>common/img/top/icon-more.png">
+                    <a href="" class="link-thumb">
+                        <div class="thumbnail">
+                            <img class="thumbnail-img" src="<?php echo APP_URL; ?>common/img/top/construction-3.jpg">
+                            <div class="contents">
+                                <h2>Novotel Sài gòn</h2>
+                                <img class="icon" src="<?php echo APP_URL; ?>common/img/top/icon-more.png">
+                            </div>
                         </div>
                     </a>
-                    <a href="">
-                        <img src="<?php echo APP_URL; ?>common/img/top/construction-4.jpg">
-                        <div class="contents contents-s">
-                            <h2>Novotel Sài gòn</h2>
-                            <img class="icon" src="<?php echo APP_URL; ?>common/img/top/icon-more.png">
+                    <a href="" class="link-thumb">
+                        <div class="thumbnail">
+                            <img class="thumbnail-img" src="<?php echo APP_URL; ?>common/img/top/construction-4.jpg">
+                            <div class="contents">
+                                <h2>Novotel Sài gòn</h2>
+                                <img class="icon" src="<?php echo APP_URL; ?>common/img/top/icon-more.png">
+                            </div>
                         </div>
                     </a>
                 </div>
             </div>
             <div class="construction-group">
-                <a href="">
-                    <img src="<?php echo APP_URL; ?>common/img/top/construction-5.jpg">
-                    <div class="contents">
-                        <h2>Novotel Sài gòn</h2>
-                        <img class="icon" src="<?php echo APP_URL; ?>common/img/top/icon-more.png">
+                <a href="" class="link-thumb">
+                    <div class="thumbnail">
+                        <img class="thumbnail-img" src="<?php echo APP_URL; ?>common/img/top/construction-1.jpg">
+                        <div class="contents contents-2x">
+                            <h2>Novotel Sài gòn</h2>
+                            <img class="icon" src="<?php echo APP_URL; ?>common/img/top/icon-more.png">
+                        </div>
                     </div>
                 </a>
             </div>
@@ -182,30 +192,36 @@ include(APP_PATH."libs/head.php");
             </div>
             <div class="news-list flexBox flexBox--between">
                 <div class="news-box">
-                    <a href="">
+                    <a href="" class="link-thumb">
                         <div class="thumbnail">
-                            <img class="cover" src="<?php echo APP_URL; ?>common/img/top/thumbnail.jpg">
-                            <img class="icon" src="<?php echo APP_URL; ?>common/img/top/icon-more.png">
+                            <img class="thumbnail-img" src="<?php echo APP_URL; ?>common/img/top/thumbnail.jpg">
+                            <div class="contents contents-2x">
+                                <img class="icon" src="<?php echo APP_URL; ?>common/img/top/icon-more.png">
+                            </div>
                         </div>
                         <p class="date">02 / 10 / 2018</p>
                         <p class="title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,quam</p>
                     </a>
                 </div>
                 <div class="news-box">
-                    <a href="">
+                    <a href="" class=link-thumb>
                         <div class="thumbnail">
-                            <img class="cover" src="<?php echo APP_URL; ?>common/img/top/thumbnail.jpg">
-                            <img class="icon" src="<?php echo APP_URL; ?>common/img/top/icon-more.png">
+                            <img class="thumbnail-img" src="<?php echo APP_URL; ?>common/img/top/thumbnail.jpg">
+                            <div class="contents contents-2x">
+                                <img class="icon" src="<?php echo APP_URL; ?>common/img/top/icon-more.png">
+                            </div>
                         </div>
                         <p class="date">02 / 10 / 2018</p>
                         <p class="title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,quam</p>
                     </a>
                 </div>
                 <div class="news-box">
-                    <a href="">
+                    <a href="" class="link-thumb">
                         <div class="thumbnail">
-                            <img class="cover" src="<?php echo APP_URL; ?>common/img/top/thumbnail.jpg">
-                            <img class="icon" src="<?php echo APP_URL; ?>common/img/top/icon-more.png">
+                            <img class="thumbnail-img" src="<?php echo APP_URL; ?>common/img/top/thumbnail.jpg">
+                            <div class="contents contents-2x">
+                                <img class="icon" src="<?php echo APP_URL; ?>common/img/top/icon-more.png">
+                            </div>
                         </div>
                         <p class="date">02 / 10 / 2018</p>
                         <p class="title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,quam</p>
