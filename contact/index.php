@@ -1,5 +1,5 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"] . "/bbc/bbc/app_config.php");
+include($_SERVER["DOCUMENT_ROOT"] . "/bbc/app_config.php");
 include(APP_PATH."libs/head.php"); 
 ?>
 </head>
