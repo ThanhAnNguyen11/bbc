@@ -40,6 +40,7 @@
 <!--css-->
 <link rel="stylesheet" href="<?php echo APP_URL; ?>common/css/base.css" media="all">
 <link rel="stylesheet" href="<?php echo APP_URL; ?>common/css/style.css" media="all">
+<link rel="stylesheet" href="<?php echo APP_URL; ?>common/css/import.css" media="all">
 <link rel="stylesheet" href="<?php echo APP_URL; ?>common/css/media.css" media="all">
 <link rel="stylesheet" href="<?php echo APP_URL; ?>common/css/hamburgers.css" media="all">
 <!--/css-->

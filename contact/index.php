@@ -2,7 +2,6 @@
 include($_SERVER["DOCUMENT_ROOT"] . "/bbc/bbc/app_config.php");
 include(APP_PATH."libs/head.php"); 
 ?>
-<link rel="stylesheet" href="<?php echo APP_URL; ?>common/css/contact.css" media="all">
 </head>
 
 <body id="contact">
