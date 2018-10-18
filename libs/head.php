@@ -41,9 +41,10 @@
 <link rel="stylesheet" href="<?php echo APP_URL; ?>common/css/base.css" media="all">
 <link rel="stylesheet" href="<?php echo APP_URL; ?>common/css/style.css" media="all">
 <link rel="stylesheet" href="<?php echo APP_URL; ?>common/css/media.css" media="all">
-<link rel="stylesheet" href="<?php echo APP_URL; ?>common/css/slick.css" media="all">
+<link rel="stylesheet" href="<?php echo APP_URL; ?>common/css/hamburgers.css" media="all">
 <!--/css-->
 <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,600,700,900" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!--favicons-->
 <link rel="icon" href="<?php echo APP_URL; ?>common/img/icon/favicon.ico" type="image/vnd.microsoft.icon">
