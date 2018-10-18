@@ -392,7 +392,30 @@ a {
 Header
 ------------------------------------------------------------*/
 
+<<<<<<< HEAD
 
+=======
+
+/*-----------------------------------------------------------
+Container
+------------------------------------------------------------*/
+
+#container {
+    clear: both;
+    margin: 0 auto 50px;
+    max-width: 1020px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+>>>>>>> 3d860d82a3f71ff6c79f653c178b66b6fd3a100f
 /*-----------------------------------------------------------
 PageTop
 ------------------------------------------------------------*/
@@ -418,10 +441,24 @@ Footer
     border-top: 1px solid #ccc;
     padding: 10px 0;
 }
+<<<<<<< HEAD
+=======
+
+
+/*---*/
+>>>>>>> 3d860d82a3f71ff6c79f653c178b66b6fd3a100f
 
 
 /*---*/
 
+<<<<<<< HEAD
+=======
+.flexBox--nosp {
+    display: block;
+}
+
+
+>>>>>>> 3d860d82a3f71ff6c79f653c178b66b6fd3a100f
 /* Smartphone */
 
 @media only screen and (max-width: 767px) {
