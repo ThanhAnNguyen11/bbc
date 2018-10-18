@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* CONTACT */
+
+.contactContent {
+    margin-top: 100px;
+}
+
+.contactContent .leftContact {
+    width: 50%;
+}
+
+.contactContent .rightContact {
+    width: 44%;
+}
+
+.contactContent #map {
+    height: 500px;
+}
+
+.contactContent .h3_contact {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contactContent .h3_contact span {
+    color: #ffb200;
+}
+
+.contactContent .txtContact {
+    color: #666;
+    margin-top: 40px;
+}
+
+.contactContent .contactInfo {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.contactContent .contactInfo tr td {
+    padding: 15px 0 15px 20px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.contactContent .contactInfo span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+    color: #ffb200;
+    background: rgba(255, 178, 0, 0.1);
+}

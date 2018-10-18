@@ -466,6 +466,72 @@ Footer
 }
 
 
+/* HEADSUB */
+
+.headSub {
+    position: relative;
+}
+
+.headSub h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.headSub h2 span {
+    color: #ffb200;
+}
+
+.bgContent {
+    background: url("../img/other/bg_content.jpg") no-repeat top right;
+    padding: 20px 0 0;
+}
+
+
+/* BREADCRUMB */
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb li {
+    position: relative;
+    padding-right: 20px;
+    margin-right: 20px;
+    color: #666;
+}
+
+.breadcrumb li:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 40%;
+    width: 6px;
+    height: 6px;
+    border-left: 1px solid #666;
+    border-top: 1px solid #666;
+    transform: rotate(135deg);
+}
+
+.breadcrumb li:last-child::before {
+    border: none;
+}
+
+.breadcrumb li:first-child a {
+    font-size: 20px;
+}
+
+.breadcrumb li a {
+    color: #ffb200;
+}
+
+
 /* Smartphone */
 
 @media only screen and (max-width: 767px) {
